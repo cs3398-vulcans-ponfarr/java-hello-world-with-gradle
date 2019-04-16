@@ -64,13 +64,13 @@ public class TestGreeter {
 
    @Test
 
-   public void newtestjgGreaterPass()
+   public void newtestjgGreaterFail()
 
    {
 
       g.setName("Jacob");
 
-      assertEquals(g.getName(),"Jacob");
+      assertEquals(g.getName(),"Bob");
 
       assertEquals(g.sayHello(),"Hello Jacob!");
 
