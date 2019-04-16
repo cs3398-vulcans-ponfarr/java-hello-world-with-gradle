@@ -20,11 +20,11 @@ public class TestGreeter {
 
    private Greeter g;
 
-
+	
 
    @Before
 
-   public void setUp() throws Exception
+   public void setUp() throws Exception 
 
    {
 
@@ -36,7 +36,7 @@ public class TestGreeter {
 
    @Test
 
-   public void testGreeterEmpty()
+   public void testGreeterEmpty() 
 
    {
 
@@ -46,11 +46,11 @@ public class TestGreeter {
 
    }
 
-
+	
 
    @Test
 
-   public void testGreeter()
+   public void testGreeter() 
 
    {
 
@@ -62,19 +62,32 @@ public class TestGreeter {
 
    }
 
+	
    @Test
 
-   public void newtestjgGreaterPass()
+   public void newtestPCGreeterPass() 
 
    {
 
-      g.setName("Jacob");
+      g.setName("Peter Cowsar");
 
-      assertEquals(g.getName(),"Jacob");
+      assertEquals(g.getName(),"Peter Cowsar");
 
-      assertEquals(g.sayHello(),"Hello Jacob!");
+      assertEquals(g.sayHello(),"Hello Peter Cowsar!");
 
    }
+	
+   @Test
 
+   public void newtestPCGreeterFail() 
 
+   {
+
+      g.setName("Peter Cowsar");
+
+      assertEquals(g.getName(),"Lochness Monster");
+
+      assertEquals(g.sayHello(),"Hello eight-story crustacean from the Paleozoic era!");
+
+   }
 }
